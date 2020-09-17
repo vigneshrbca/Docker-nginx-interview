@@ -22,7 +22,7 @@ Then build and run it:
 Docker Hub
 ----------
 
-The trusted build information can be found on the Docker Hub at https://hub.docker.com/r/farrajota/docker-nginx-ssl-secure/.
+The trusted build information can be found on the Docker Hub at https://hub.docker.com/r/vigenshr/docker-nginx-ssl/.
 
 SSL
 ---
