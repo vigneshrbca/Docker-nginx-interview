@@ -5,7 +5,7 @@ A high-performance Nginx base image for Docker to serve static websites. It will
 
 To build a Docker image for your site, you'll need to create a `Dockerfile`. For example, if your site is in a directory called `src/`, you could create this `Dockerfile`:
 
-    FROM vignesh/docker-nginx-ssl
+    FROM vigenshr/docker-nginx-ssl
     COPY src/ /var/www
     CMD 'nginx'
 
@@ -22,7 +22,7 @@ Then build and run it:
 Docker Hub
 ----------
 
-The trusted build information can be found on the Docker Hub at https://hub.docker.com/r/vigenshr/docker-nginx-ssl/.
+The trusted build information can be found on the Docker Hub at https://hub.docker.com/r/vigenshr/docker-nginx-ssl/
 
 SSL
 ---
@@ -52,14 +52,11 @@ To modify the NGINX config, you would just create a custom Dockerfile like the f
 where you copy in your modified config files.
 
 ```dockerfile
-# Guide here:
-# https://github.com/KyleAMathews/docker-nginx
 
-# Build docker file
-# docker build -t CONTAINERNAME .
+
 
 # Build from this repo's image
-FROM vignesh/docker-nginx-ssl
+FROM vigenshr/docker-nginx-ssl
 
 # Example if you wanna swap the default server file.
 COPY path/to/your/default /etc/nginx/sites-enabled/default
