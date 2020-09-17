@@ -66,8 +66,3 @@ COPY src/ /var/www
 
 CMD 'nginx'
 ```
-
-License
--------
-
-[MIT License](LICENSE.txt)
