@@ -5,7 +5,7 @@ A high-performance Nginx base image for Docker to serve static websites. It will
 
 To build a Docker image for your site, you'll need to create a `Dockerfile`. For example, if your site is in a directory called `src/`, you could create this `Dockerfile`:
 
-    FROM farrajota/docker-nginx-ssl-secure
+    FROM vignesh/docker-nginx-ssl
     COPY src/ /var/www
     CMD 'nginx'
 
@@ -59,7 +59,7 @@ where you copy in your modified config files.
 # docker build -t CONTAINERNAME .
 
 # Build from this repo's image
-FROM farrajota/docker-nginx-ssl-secure
+FROM vignesh/docker-nginx-ssl
 
 # Example if you wanna swap the default server file.
 COPY path/to/your/default /etc/nginx/sites-enabled/default
